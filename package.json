@@ -1,6 +1,6 @@
 {
   "name": "dva-type",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "根据 dva model 的类型定义进行 state、dispatch 的 TS 类型推导，传入 model 类型定义，返回state和actions的类型定义。",
   "main": "index.ts",
   "scripts": {
