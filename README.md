@@ -1,4 +1,4 @@
-# dvc-type
+# dva-type
 
 ## 安装
 
