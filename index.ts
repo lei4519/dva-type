@@ -81,7 +81,7 @@ type ResolverEffects<T extends Record<string, Model>> = ValueType<
 /**
  * @description 提取 model 中的 reducers 类型
  */
-export type ResolverReducers<T extends Record<string, Model>> = ValueType<
+type ResolverReducers<T extends Record<string, Model>> = ValueType<
   {
     [t in keyof T]: T[t]['reducers'] extends {
       __R__?: Reducer

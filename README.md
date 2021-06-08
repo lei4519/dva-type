@@ -26,10 +26,11 @@
 
 ​ [Example](https://github.com/lei4519/dva-type/blob/main/examples/index.ts)
 
-1. 定义单个 `Model` 类型
+1. 定义单个 `Model` 类型（注意 `Model`、`Effect` 不是从 `dva` 中导入的）
 
    ```ts
    import { Effect, Model } from 'dva-type'
+
    interface ListModel extends Model {
      state: {
        list: any[]
@@ -72,10 +73,7 @@
    const dispatch = useDispatch<(action: Actions) => any>()
 
    // class
-   const mapStateToProps = (state: State) => {
-     state.loading.effects['']
-     state.empty
-   }
+   const mapStateToProps = (state: State) => {}
    interface Props {
      dispatch: (action: Actions) => any
    }
